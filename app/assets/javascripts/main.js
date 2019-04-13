@@ -70,7 +70,7 @@ $(document).ready(function(){
     processor.onaudioprocess = function(e) {
       if(recording){
         clearScreen();
-        showAmpitude(e.inputBuffer.getChannelData(0),128,70);
+        showAmpitude(e.inputBuffer.getChannelData(0),128,50);
         showSpectrum(DFT(e.inputBuffer.getChannelData(0),32,1),32,10);
       }
     };

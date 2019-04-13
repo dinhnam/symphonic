@@ -1,0 +1,90 @@
+body{
+  background-image: url('https://www.fg-a.com/wallpapers/2017-red-flower-on-black.jpg');
+  color: beige;
+  background-size: cover;
+  h5{
+    text-align: right;
+  }
+}
+main{
+  display: flex;
+  flex-direction: row;
+}
+#record{
+  cursor: pointer;
+  background-color: #F1948A;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  user-select: none;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.bg{
+  width: 512px;
+  height: 480px;
+  span{
+    position: absolute;
+    bottom: 0;
+  }
+}
+#amplitude{
+  height: 80px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  span{
+    position: absolute;
+    top: 0;
+  }
+}
+#spectrum{
+  height: 360px;
+  width: 100%;
+  position: relative;
+  span{
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    font-size: 14px;
+  }
+}
+#music{
+  width: 100%;
+  #video{
+    margin-right: auto;
+    margin-left: auto; 
+    height: 420px;
+    width: 680px;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #pathvideo{
+    float: right;
+    margin-right: 40px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+  }
+  span{
+    margin: 5px;
+    padding: 5px;
+    background-color: red;
+    cursor: pointer;
+  }
+}
+#chanbg{
+  width: 30px;
+  height: 30px;
+  background-image: url('http://files.softicons.com/download/system-icons/file-types-icons-by-treetog-artwork/ico/bmp.ico');
+  background-size: cover;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  opacity: 0.8;
+}
+#choose{
+    width: 0px;
+    height: 0px;
+}

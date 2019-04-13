@@ -31,26 +31,25 @@ $(document).ready(function(){
   }
 
   function showAmpitude(arr,size,gain){
-    
+    dot.style.height = '2px';
+    dot.style.width = '2px';
+    dot.style.backgroundColor = '#3366FF';
     for(var i=0; i<size; i++){
       dot.style.bottom = gain*arr[i].toString()+"px";
       dot.style.left = 2*i.toString()+"px";
-      dot.style.height = '2px';
-      dot.style.width = '2px';
-      dot.style.backgroundColor = '#3366FF';
       $(dot).clone().appendTo(amplitude);
     }
     
   }
   function showSpectrum(arr,size,gain){
     var axitX=0;
+    dot.style.backgroundColor = '#0000FF';
+    dot.style.bottom = "0px";
     for(var i=0; i<size; i++){
       var a =gain*arr[i];
       if(a>320){
         a = 320;
       }
-      dot.style.backgroundColor = '#0000FF';
-      dot.style.bottom = "0px";
       dot.style.left = axitX.toString()+"px";
       dot.style.width = "12px";
       dot.style.height = a.toString()+"px";
